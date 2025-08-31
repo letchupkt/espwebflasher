@@ -188,16 +188,6 @@ const App = () => {
           </div>
         </div>
 
-        <div className="firmware-section">
-          <h3>ℹ️ Firmware Information</h3>
-          <div className="firmware-info">
-            <div>Ready to Flash: {firmwareReady ? 'Yes' : 'No'}</div>
-            <div>Firmware: firmware.bin</div>
-            <div>Location: /firmware/firmware.bin</div>
-            <div>Status: {firmwareReady ? 'Ready' : 'Not Found'}</div>
-          </div>
-        </div>
-
         <button
           className="flash-btn"
           onClick={flashFirmware}
