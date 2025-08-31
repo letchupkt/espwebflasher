@@ -1,0 +1,15 @@
+# This is a placeholder firmware file
+# Replace this with your actual ESP32 firmware binary
+# The file should be a compiled .bin file for ESP32
+
+# To add your firmware:
+# 1. Delete this file
+# 2. Copy your firmware.bin file here
+# 3. Make sure it's named exactly "firmware.bin"
+
+# Example firmware files you might have:
+# - esp32_project.bin
+# - main.bin  
+# - firmware_v1.0.bin
+
+# Just rename your .bin file to "firmware.bin" and place it in this folder
