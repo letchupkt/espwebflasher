@@ -1,0 +1,259 @@
+/*
+ * ESP32 Flasher Styles
+ * Created by: letchupkt
+ * Social: @letchu_pkt (IG) | letchupkt (GitHub) | lakshmikanthank (LinkedIn)
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #00d4ff 0%, #ff00ff 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.header p {
+  color: #666;
+  font-size: 14px;
+}
+
+.instructions {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.instructions h3 {
+  color: #856404;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.instructions ol {
+  color: #856404;
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.troubleshoot {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ffeaa7;
+}
+
+.troubleshoot strong {
+  color: #856404;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.troubleshoot ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.troubleshoot li {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.retry-info {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 10px 0;
+  font-size: 12px;
+  color: #856404;
+  text-align: center;
+}
+
+.connection-section, .firmware-section {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.connection-section h3, .firmware-section h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.connect-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.connect-btn.disconnected {
+  background: #007bff;
+  color: white;
+}
+
+.connect-btn.connected {
+  background: #28a745;
+  color: white;
+}
+
+.connect-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.connect-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status-indicator.connected {
+  background: #28a745;
+}
+
+.status-indicator.disconnected {
+  background: #dc3545;
+}
+
+.firmware-info {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.flash-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.flash-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+}
+
+.flash-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.logs-section {
+  background: #2d3748;
+  border-radius: 10px;
+  padding: 15px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.logs {
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+}
+
+.log-entry {
+  color: #a0aec0;
+  margin-bottom: 4px;
+  word-wrap: break-word;
+}
+
+.log-entry:last-child {
+  color: #68d391;
+}
+
+/* Scrollbar styling */
+.logs-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.logs-section::-webkit-scrollbar-track {
+  background: #4a5568;
+  border-radius: 3px;
+}
+
+.logs-section::-webkit-scrollbar-thumb {
+  background: #718096;
+  border-radius: 3px;
+}
+
+.logs-section::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+/* Toast customization */
+.Toastify__toast-container {
+  font-size: 14px;
+}
+
+.Toastify__toast {
+  border-radius: 10px;
+}
